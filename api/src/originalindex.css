@@ -1,42 +1,11 @@
 body {
-  background-position:top;
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
-  
   }
-.customizeHeader
-{
-  background-color: black;
- height:400px;
-}
-  .main
-{
-
-    text-align:center;
-}
-.content
-{
-  background:white;
-  margin-left:520px;
-  margin-top:100px;
-}
   
-#tableContent td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#tableContent tr:nth-child(even){background-color: #f2f2f2;}
-#tableContent tr:hover {background-color: #ddd;}
   ol, ul {
     padding-left: 30px;
   }
-
-.picture
-{
-		height:100px;
-		width:100px;
-}
   
   .board-row:after {
     clear: both;
