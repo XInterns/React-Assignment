@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  padding: px;
+  font-family: sans-serif;
+  padding-left: 0px;
+  padding-top: 0px;
+  background-color: wheat;
+  
+  
+}
+.image{
+ 
+ width: 1300px;
+ height: 200px;
+ background-image: url("https://starwarsblog.starwars.com/wp-content/uploads/2018/05/star-wars-movie-posters.jpg");
+}
+.add{
+  padding-left: 450px;
+  padding-top: 300px;
+}
+
+.Add{
+  background: wheat;
+  padding-left: 500px;
+  padding-top: 50px;
+}
+
+.color{
+  background: white;
+}
