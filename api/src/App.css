@@ -1,0 +1,49 @@
+
+
+.bg {
+  /* The image used */
+  background-image: url("img.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+  /*background-image: url("img.jpg");*/
+  size: 100%;
+  
+  text-decoration-color: yellow;
+
+}
+/*
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+*/
+.App-header {
+  /*background-image: url("img.jpg");*/
+  height: 400px;
+  padding: 20px;
+  color: yellow;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
