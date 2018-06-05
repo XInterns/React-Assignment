@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+ /* animation: App-logo-spin infinite 20s linear; */
+  height: 70px;
+}
+
+.App-header {
+  background-color: #000;
+  height: 120px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Label{
+  background-color: #5E5454;
+  padding: 6px;
+  border-radius: 5px;
+  margin-right: 3px;
+  height: 50px;
+  font-size: 13px
+}
+
+.Input-group-Addon {
+  background-color: #5E5454;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 100px;
+  height: 50px;
+}
+
+.Input-group-btn{
+  background-color: #5E5454;
+}
+
+.btn-primary{
+  background-color: #5E5454;
+  border-radius: 5px;
+  color: #000;
+  padding: 3px
+
+}
+
+.textarea{
+  height: 400px;
+  width: 400px;
+}
+
+.Content-Area{
+  margin-top: 20px;  
+}
