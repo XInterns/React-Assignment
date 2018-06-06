@@ -1,0 +1,71 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+//import './App.js';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+
+// class MyComponent extends React.Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = {
+//         error: null,
+//         isLoaded: false,
+//         items: []
+//       };
+//     }
+  
+//     componentDidMount() {
+//       fetch("https://swapi.co/api/people/?search=")
+//         .then(res => res.json())
+//         .then(
+//           (result) => {
+//             this.setState({
+//               isLoaded: true,
+//               items: result.results
+//             });
+//           },
+//           // Note: it's important to handle errors here
+//           // instead of a catch() block so that we don't swallow
+//           // exceptions from actual bugs in components.
+//           (error) => {
+//             this.setState({
+//               isLoaded: true,
+//               error
+//             });
+//           }
+//         )
+//     }
+  
+//     render() {
+//       const { error, isLoaded, items } = this.state;
+//       if (error) {
+//         return <div>Error: {error.message}</div>;
+//       } else if (!isLoaded) {
+//         return <div>Loading...</div>;
+//       } else {
+//         return (
+//           <ul>
+//             {items.map(item => (
+//               <li key={item.name}>
+//                 {"NAME: " +item.name}
+                
+//               </li>
+//             ))}
+//           </ul>
+//         );
+//       }
+//     }
+//   }
+  
+ReactDOM.render(
+<App />,
+document.getElementById('root')
+);  
+// ReactDOM.render(
+// <MyComponent />,
+// document.getElementById('root')
+// );
+
+registerServiceWorker();

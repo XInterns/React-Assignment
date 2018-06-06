@@ -1,0 +1,26 @@
+body{
+background-color: black;
+/* background-image: url(./poster.jpg) */
+}
+
+.App {
+  text-align: center;  
+}
+
+.App-logo {
+  height: 400px;
+}
+
+.App-header {
+  color: yellow;
+  font-size: 12px;
+}
+
+.App-title {
+  font-size: 25px;
+  color: white;
+}
+
+
+
+
