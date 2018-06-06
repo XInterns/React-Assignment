@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import yoda from './yoda.jpg';
 
 //import React, { Component } from 'react';
 import logo from './logo.svg';
@@ -16,7 +17,8 @@ class App extends React.Component {
                   error: null,
                   isLoaded: false,
                   items: [],
-                  img: ''
+                  img: '',
+
                   };
 
     this.handleChange = this.handleChange.bind(this);
@@ -77,7 +79,7 @@ return(
       <div class="bg" >
       <div className="App">
         <header className="App-header"> 
-          <h1 className="App-title">Welcome to Star Wars API</h1>
+          <h1 className="App-title" >Welcome to the Star Wars API</h1>
         </header>
         <p className="App-intro">
             <form onSubmit={this.handleSubmit}>
@@ -88,20 +90,16 @@ return(
             <input type="submit" value="Submit" /><br/>
             <ul style={{color:'black'}} >
           {items.map(item => (
-           <li key={item.name} type="button" value={this.state.value} onClick={() => {
-                  this.setState({ img: item.name+".jpg" });
-                  
-                   return  (
-                     <div> //<img src={this.state.img}/>
-                  <ul style={{color:'blue'}} >
-                   <li>Mass: {item.mass}</li>
-                   <li>Height: {item.height}</li> 
-                   </ul>
-                   </div>  ); 
-                   }} >          
-           
-              {item.name} 
-            </li>
+            <div class="template">
+            <div class="pic" height="80%"><img class="snap" src={yoda} alt="yoda" width="100%"/></div>
+          
+               <br/>
+                  NAME: {item.name}<br/>
+                  Mass: {item.mass}<br/>
+                  Height:{item.height}
+                   
+          </div>                    
+                         
           ))}
         </ul>
             </form>

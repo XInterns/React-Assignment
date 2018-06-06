@@ -1,6 +1,77 @@
+.template {
+
+  float:left;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  border-style: solid;
+  width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  
+}
+.pic {
+  border-style: solid;
+  border: 1px solid rgb(10, 1, 1);
+  box-shadow: 8px 8px 5px #444;
+  padding: auto;
+  width: 100%;
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+.snap {
+  widows: 10em;;
+  height:210px;
+  padding:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+
+
+.template img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  }
+  
+  .pic img:hover{
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+  }
+  
+
+
+.template img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  }
+  
+  .pic img:hover{
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+  }
+  
+
 
 
 .bg {
+  border-style: solid;
   /* The image used */
   background-image: url("img.jpg");
 
@@ -14,6 +85,7 @@
 }
 
 .App {
+  border-style: solid;
   text-align: center;
   /*background-image: url("img.jpg");*/
   size: 100%;
@@ -35,7 +107,9 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.0em;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
 
 .App-intro {
