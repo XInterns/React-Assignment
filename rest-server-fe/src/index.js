@@ -83,6 +83,11 @@ class Info extends React.Component {
              this.handleclick();
              event.preventDefault();
       }
+      handleclickonli(event)
+      {
+        return(<img src={require(this.state.img)}/>)
+
+      }
       furtherdetails(name)
       {
           /* for(const i=0;i<items.length;i++)
@@ -118,7 +123,7 @@ class Info extends React.Component {
             console.log('No Response');
           }
         return (
-          <div id="abc">
+          <div id="div-id">
              <div>
             <form onSubmit={this.handleSubmit} className="image add">
               <label >
@@ -127,20 +132,41 @@ class Info extends React.Component {
               <input type="submit" value="Search" className="btn btn-primary" />
             </form>
             </div>
-          <div>    
-               <ol className=" Add">
+            <div class="container">    
+               <ol className="Add" >
                   {item.map(items => (
-                    <li onClick={this.onitemclick}> {items.name}  </li>
+                    <li key={item.name} type="button" value={this.state.value} onClick={() => {
+                       this.setState({ image: item.name+".jpg" });
+                      
+                       return  (
+                         <div> 
+                       <ul className="color" >
+                       <li>Mass: {item.mass}</li>
+                       <li>Height: {item.height}</li> 
+                       </ul>
+                       </div>  )
+                       
+                       }} > 
+                        {items.name}  <img className="space" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Yoda_Empire_Strikes_Back.png/220px-Yoda_Empire_Strikes_Back.png" alt="Icon"></img>
+                        <ul className="box color" >
+                         <li > Height: {items.height} </li>
+                         <li> Mass: {items.mass} </li>
+                         <li> Hair color: {items.hair_color}</li>
+                         <li> Skin color: {items.skin_color}</li>
+                         <li> Birth Year: {items.birth_year}</li>
+                        </ul>
+                    </li>
             
                   
                      ))}
 
                </ol>
-               </div>
-            </div>
+             </div>
+         </div>
           );
         }
     }
 }
 ReactDOM.render(<Info />, document.getElementById('root'));
 //registerServiceWorker();
+

@@ -21,10 +21,41 @@ body {
 
 .Add{
   background: wheat;
-  padding-left: 500px;
+  padding-left: 400px;
   padding-top: 50px;
 }
 
 .color{
   background: white;
 }
+.box{
+  border: 2px solid gray;
+  width:400px;
+  
+}
+box:hover{
+  border: 2px solid gray;
+  background-color: wheat;
+  width:600px;
+}
+.container:hover .overlay {
+  opacity: 1;
+  
+}
+.space{
+  padding-bottom: 20px;
+  padding-top:20px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
