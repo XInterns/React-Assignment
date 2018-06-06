@@ -1,3 +1,5 @@
+
+
 body {
   background-position:top;
     font: 14px "Century Gothic", Futura, sans-serif;
@@ -14,11 +16,33 @@ body {
 
     text-align:center;
 }
+.container
+{
+  width: 1400px;
+  margin: auto;
+  flex-wrap: wrap ;
+}
+.div1 {    
+  width: 200px;
+  height:250px;
+  float: left;
+  border: 1px solid black;
+  padding:40px;
+  margin: 10px;
+}
+.div1:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.div2 {   
+  width: 200px;
+  float: left;
+  border: 1px solid red;
+  box-shadow: 5px 10px;
+} 
 .content
 {
   background:white;
-  margin-left:520px;
-  margin-top:100px;
 }
   
 #tableContent td {

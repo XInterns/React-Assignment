@@ -10,6 +10,32 @@ function DisplayHeader(){
     </header>
   );
 }
+
+function disp(data){
+  //var lines = this.state.testLines.map(function(line, i) {
+    // This is just an example - your return will pull information from `line`
+    // Make sure to always pass a `key` prop when working with dynamic children: https://facebook.github.io/react/docs/multiple-components.html#dynamic-children
+    //return (
+      //<
+      //for (var p in data) {
+       // for (var k in data[p]) {
+         // rows += '<tr><td>' + k + '</td><td>' + data[p][k] + '</td></tr>'
+        //}
+     // }
+   // );
+  //});
+var lines='';
+lines.push(<table border='0' className="content" id="tableContent">)
+  for (var p in data) { {
+      lines+=(<tr><td> + {p} + </td><td> + {data[p]}+ </td></tr>)
+    }
+  }
+  lines.push(</table>)
+  return lines;
+
+
+}
+
 function DisplayDetails(items)
 {
   return (
@@ -155,7 +181,12 @@ setAttrib(i)
         {this.renderHeader()}Loading...</div>)
     } else 
     {
-
+      var data=this.state.items;
+      for (var p in data) {
+        for (var k in data[p]) {
+          console.log(k + '  ' + data[p][k] + '  ');
+        }
+      }
       if(this.state.items.length==1){
       return (
        <div className="main">
@@ -177,7 +208,7 @@ setAttrib(i)
                     {
                       console.log("./"+items[0].name+".jpeg")
                     }
-                      <img className="picture" src={pic} />
+                      <img className="picture" src={items[0].name=='Yoda'?pic:back} />
                     </span>
               </div>
         </div>
@@ -198,14 +229,14 @@ setAttrib(i)
           <div className="div1" onClick={this.setAttrib}>
                 {
                   
-                  DisplayDetails(items[i])
+                  disp(items[i])
                 }
               
               <span key={items[0].name}>
                   {
                     console.log("./"+items[0].name+".jpeg")
                   }
-                    <img className="picture" src={pic} />
+                    <img className="picture" src={items[0].name=='Yoda'?pic:back} />
                   </span>
             </div>
         );
