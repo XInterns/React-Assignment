@@ -81,5 +81,5 @@ class DataFetchClass extends React.Component{
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppLayout />, document.getElementById('root'));
 registerServiceWorker();

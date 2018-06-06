@@ -62,7 +62,7 @@ class AppLayout extends Component {
                
                <li key={item.name}>
                  Name: {item.name} {item.mass}
-               </li>
+               </li>  
              ))}
            </ul>
         {/* <textarea className="textarea" value={JSON.stringify(items,null,'\t'  )}></textarea> */}
