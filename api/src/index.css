@@ -2,6 +2,7 @@
 
 body {
   background-position:top;
+  background-color: black;
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
   
@@ -13,36 +14,50 @@ body {
 }
   .main
 {
-
+  background-color: black;
     text-align:center;
 }
 .container
 {
+  background-color: black;
   width: 1400px;
   margin: auto;
   flex-wrap: wrap ;
 }
 .div1 {    
-  width: 200px;
-  height:250px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background: radial-gradient(circle, yellow, purple);
+  width: 400px;
+  height:500px;
   float: left;
   border: 1px solid black;
   padding:40px;
-  margin: 10px;
+  margin: 50px;
 }
 .div1:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
-.div2 {   
-  width: 200px;
-  float: left;
+.div2 {  
+  margin-right:  100px;
+  background: radial-gradient(circle, purple, white);
+  width: 400px;
+  height:500px;   
+  margin-left: 300px;
   border: 1px solid red;
   box-shadow: 5px 10px;
+  padding:100px;
 } 
+.img
+{ 
+  width: 120px;
+  height:100px;
+  margin:auto;
+  border:  solid black;
+}
 .content
 {
-  background:white;
+  background:black;
 }
   
 #tableContent td {
@@ -58,8 +73,8 @@ body {
 
 .picture
 {
-		height:100px;
-		width:100px;
+		height:99.5px;
+		width:100%;
 }
   
   .board-row:after {
