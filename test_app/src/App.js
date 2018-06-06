@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import logo from './starwars.png';
-import jabba from './jabba.jpeg'
+import logo from './profile/starwars.png';
+import jabba from './profile/jabba.jpeg';
+import chewbacca from './profile/chewbacca.jpeg';
+import lukeskywalker from './profile/lukeskywalker.jpeg';
+import obiwankenobi from './profile/obiwankenobi.jpeg';
+
+
 import './App.css';
 
 class HeaderComponent extends Component {
@@ -60,20 +65,22 @@ class AppLayout extends Component {
           </form>
           <div className="flex-container">
             {items.map(item => (
-              <div className="wrap">
+              
                 <div className="card">
-                  <img src={jabba} alt="jabba" width="100%" />
+                  <img src={logo} alt="jabba" width="100%" />
 
                   <div className="container">
 
 
-                    <p>{item.name}<br />
-                      {item.mass}</p>
+                    <p>Name: {item.name}<br />
+                      Height: {item.height}<br/>
+                      Birth-Year: {item.birth_year}<br/>
+                      Mass: {item.mass}</p>
+
                   </div>
 
                 </div>
 
-              </div>
             ))}
           </div>
 
