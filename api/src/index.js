@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-
 class MyComponent extends React.Component {
     constructor(props) {
       super(props);
@@ -57,31 +56,29 @@ class MyComponent extends React.Component {
       const { error,isLoading, items } = this.state;
       if (error) 
       {
-        return <div>Error: {error.message="no"}</div>;
+        return <div>Error:{ error.message="no"}</div>;
       } 
       else 
       {
           
         return (
         <div id="outer">
-            <form  onSubmit={this.handleSubmit} className="okay">
+            <form  onSubmit={this.handleSubmit} className="submit">
                 <label>
                 <span>  Name:</span>
                   <input type="text" value={this.state.value} onChange={this.handleChange} />
                 </label>
                 <input type="submit" value="Submit" />
              </form>
-            <div id="try">
-            <ul>
+            <div id="data">
+            <div id="big">
                 {items.map(item => (
-                <li key={item.name}>
-                   <h4>Name:{item.name} Mass:{item.mass} Height:{item.height}</h4>
-                    
-                    
-                </li>
+                
+                 <div id="result">  <span id="text">Name: {item.name}<br /><br /> Mass: {item.mass}<br /><br />Height: {item.height}<br /><br /> DOB: {item.birth_year}<br />|</span></div>
+                
                
                 ))}
-            </ul>
+            </div>
             </div>
             {this.state.isLoading === true ? <div id="small"><h1>Loading...</h1></div> : <div />}
         </div>

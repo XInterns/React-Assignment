@@ -1,28 +1,28 @@
 body {
   margin:10;
   padding: 10;
-  font-family: sans-serif;
   background-image: url("index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color:white;
+  color: darkcyan
 }
 
 label span { color:white; }
 
 
-.okay{
+.submit{
   display: flex;
   justify-content : center;
   align-items :center;
   margin: 100px;
 }
-#try
+#data
 {
   display: flex;
   justify-content : center;
   align-items :center;
+  
  
 }
 #small
@@ -31,4 +31,32 @@ label span { color:white; }
   justify-content : center;
   align-items :center;
  
+}
+#result
+{
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-color:black;
+  border-style: groove;
+  /* border-block-end-width: 10px;
+  border-block-start-width: 10px; */
+  margin: 10px;
+  background-image: url("yo.png");
+  opacity: 0.7;
+  filter: alpha(opacity=50)
+  
+}
+#big
+{
+  width: 1000px;
+  
+}
+
+#text
+{
+
+  opacity: 100;
+  filter: alpha(opacity=50);
+  background: rgb(241, 240, 239);
 }
